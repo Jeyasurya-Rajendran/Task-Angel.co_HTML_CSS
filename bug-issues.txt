@@ -1,0 +1,19 @@
+Issues
+
+Galaxy Fold - whole bug - navbar bug- fixed
+
+
+Nesthub max - 1280px
+spacing - flex bug
+From users
+Blog 
+
+On minimizing - issues on signup - fixed
+
+From user - issue fixed (using grid)
+Blog - issue fixed (using grid)
+
+Counter- issues
+
+
+

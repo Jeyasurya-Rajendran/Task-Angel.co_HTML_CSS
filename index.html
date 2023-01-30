@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport-->
+
+      <style>
+      @font-face {
+        font-family: "Arbeit";
+        src: url(/Fonts/Arbeit-Regular.otf);
+      }
+
+      @font-face {
+        font-family: "Arbeit-Bold";
+        src: url(/Fonts/Arbeit-Bold.otf);
+      }
+
+      @font-face {
+        font-family: "Galano-Classic";
+        src: url(/Fonts/Galano-Classic.otf) format("truetype");
+      }
+      </style>
+      
+      <!-- Bootstrap CDNs -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+      <!-- Stylesheet -->
+      <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+      <!-- Navlist Angelco -->
+
+      <div class="navigation">
+        <nav class="container-class nav-segment">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="nav-logo">
+            <a href="#" class=""><img class="angel-logo" src="https://assets.website-files.com/61f063412698c3c0331848b0/6225831abd957d511480da22_Logo.svg" /></a>
+          </div>
+          <ul class="navbar-list">
+            <li><a href="https://angel.co/candidates/overview" class="navbar-link">For job seekers</a></li>
+            <li><a href="https://angel.co/recruit/overview" class="navbar-link">For companies</a></li>
+            <li class="list-button"><button type="button" class="btn btn-outline-dark" onclick="location.href='https://angel.co/login'">Log In</button></li>
+            <li class="list-button list-button2" style="margin-right: 0px;"><button type="button" class="btn btn-dark" onclick="location.href='https://angel.co/jobs/signup?source=homepage&source_content=nav'">Sign Up</button></li>
+          </ul>
+        </nav>
+      </div>
+      
+
+      <!-- Page start intro and image -->
+      <div class="hero-section">
+        <!-- <hr> -->
+        <div class="container-class hero-flex">
+          <div class="hero-text-section">
+            <div class="hero-header">
+              <h1 class="hero-intro-head">Build your team,<br>find your mission</h1>
+            </div>
+            <div class="body-large">
+              <p class="hero-intro-subtxt">Join the world's #1 startup community specialized in technical talent and opportunities</p>
+            </div>
+            <div class="hero-button" id="visible">
+              <div><button type="button" class="btn btn-dark btn-lg" onclick="location.href='https://angel.co/candidates/overview'">Find a job</button></div>
+              <div><button type="button" class="btn btn-outline-dark btn-lg" onclick="location.href='https://angel.co/recruit/overview'">Find talent</button></div>  
+            </div>
+          </div>
+          <div class="hero-img-section">
+            <img src="https://assets.website-files.com/61f063412698c3c0331848b0/61fad20cfca2df71245ce891_1.png" class="hero-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Using flexbox Sign-Up -->
+
+      <div class="container-class">
+        <div class="flexbox-container sign-up-form">
+          <div class="mail-container">
+            <form action="#" class="mail-flex">
+              <input type="email" value="" placeholder="Your email" class="mailBox" required/>
+              <input type="submit" value="Sign up" class="btn btn-dark custom-button sign-up-btn" />
+            </form>
+          </div>
+           <div class="sign-up-txt color-grey">
+            or
+          </div>
+          <div class="google-btn-container">
+            <button type="button" value="" class="btn btn-outline-dark google-button" onclick="location.href='https://accounts.google.com/o/oauth2/auth/identifier?access_type=offline&client_id=226439589000-46u1nnlaf8lt4fuku2pc3mfqj59sh0u4.apps.googleusercontent.com&prompt=consent&redirect_uri=https%3A%2F%2Fangel.co%2Fauth%2Fgoogle_oauth2%2Fcallback&response_type=code&scope=email%20profile&state=85d07164de16378328a6198114dc17eefbb603d74441b21e&flowName=GeneralOAuthFlow'"><img src="/images/Google__G__Logo.svg.png" class="google-logo">Sign-up with Google</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Log-in -->
+
+      <div class="container-class">
+        <div class="log-in log-in-flex color-grey">
+          <div class="log-flex1">
+            <p>Looking for AngelList Venture?  Visit <a href="https://www.angellist.com/" class="log-in-link color-grey">angellist.com</a></p>
+          </div>
+          <div class="log-flex2">
+            <p>Already have an account? <a href="https://angel.co/login" class="log-in-link color-grey">Log in</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat section -->
+
+      <div class="container-class" id="stats">
+        <div class="stat-section">
+          <div class="row">
+            <div class="col-lg-4 stat-container stat-container-top heading">
+              <div class="heading-large">130K +</div>
+              <div class="heading-medium">Tech Jobs</div>
+            </div>
+            <div class="col-lg-4 stat-container stat-container-mid heading">
+              <div id="counter" class="counter heading-large">0</div>
+              <div class="heading-medium">Matches Made</div>
+            </div>
+            <div class="col-lg-4 stat-container stat-container-bottom heading" style="border-right: none;">
+              <div class="heading-large">8M +</div>
+              <div class="heading-medium">Startup-ready candidates</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Scrolling -->
+      <div class="container-class">
+        <div class="slider">
+          <div class="gradient-box grading-front"></div>
+          <div class="slide-track">
+            <div class="slide" ><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a650c44b7f3c0981c997_Vector-5.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a6464090e96adb03e399_Vector-4.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a63ea2cb9a38fba76ae4_Vector-3.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a634a9c541bd29ce0de5_Vector-2.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a62b8b1df74b66ae5cd5_Vector-1.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a621a2cb9a2603a76aa3_Group.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a6120037c27a023bf1a5_Group-1.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a609503359b5679def8f_Group%2047.svg" /></div>
+            <div class="slide" ><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a5fe2e25d76ba0e6a80b_g3707.svg" /></div>
+            
+            <div class="slide" ><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a650c44b7f3c0981c997_Vector-5.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a6464090e96adb03e399_Vector-4.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a63ea2cb9a38fba76ae4_Vector-3.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a634a9c541bd29ce0de5_Vector-2.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a62b8b1df74b66ae5cd5_Vector-1.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a621a2cb9a2603a76aa3_Group.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a6120037c27a023bf1a5_Group-1.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a609503359b5679def8f_Group%2047.svg" /></div>
+            <div class="slide"><img class="logo-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/61f0a5fe2e25d76ba0e6a80b_g3707.svg" /></div>
+          </div>
+          <div class="gradient-box grading-end"></div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Got talent -->
+      <section>
+        <div class="card-flex container-class">
+          <div  class="card-flex-img">
+            <img src="https://assets.website-files.com/61f063412698c3c0331848b0/61f995f51f7aed6923418ff7_Frame%20283-min.png" class="card-img"  />
+          </div>
+          <div class="card-flex-text">
+            <div class="mw-450">
+              <div class="card-head-section">
+                <div class="heading pre-heading mb-32">GOT TALENT?</div>
+                <h2 class="card-header">Why job seekers love us</h2>
+              </div>
+              
+              <div class="icon-list">
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f862b55e16a8d836796253_Star.svg" />
+                  <div class="icon-text">
+                    Unique jobs at <strong>startups</strong> and <strong>tech companies</strong> you can't find anywhere else
+                  </div>
+                </div>
+    
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/620182ab7168b334bf1300a6_Click.svg" />
+                  <div class="icon-text">
+                    Say goodbye to cover letters - your profile is all you need. <strong>One click to apply</strong> and you're done
+                  </div>
+                </div>
+                
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f862b4fe6ae663affa55fe_List.svg" />
+                  <div class="icon-text">
+                    Everything you need to know to job search - including seeing <strong>salary</strong> and <strong>stock options</strong> upfront when looking
+                  </div>
+                </div>
+    
+      
+                <div class="icon-list-item">
+                  <img src="https://assets.website-files.com/61f063412698c3c0331848b0/62018322d06e2f664227ad9f_Connect.svg" class="card-icon" /> 
+                  <div class="icon-text">
+                    Connect directly with <strong>founders</strong> at top startups - no third party recruiters allowed
+                  </div>
+                </div>
+              </div>  
+            </div>
+            
+            <div class="button-flex">
+              <div class="card-button">
+                <button class="btn btn-outline-dark" onclick="location.href='https://angel.co/candidates/overview'">Learn more</button>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-dark" onclick="location.href='https://angel.co/jobs/signup?source=homepage&source_content=got_talent_cta'">Sign up now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <!-- Need talent -->
+
+      <section>
+        <div class="card-flex container-class">
+          <div class="card-flex-text">
+            <div class="mw-450">
+              <div class="card-head-section">
+                <div class="heading pre-heading mb-32">NEED TALENT?</div>
+                <h2 class="card-header">Why recruiters love us</h2>
+              </div>
+              
+              <div class="icon-list">
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f863c03d68ace030138572_Team.svg" />
+                  <div class="icon-text">
+                    <strong>8 million</strong> responsive and startup-ready candidates, with all the information you need to vet them
+                  </div>
+                </div>
+    
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f86355582d73f01d090e35_Settings.svg" />
+                  <div class="icon-text">
+                    Everything you need to kickstart your recruiting - get job posts, company branding, and HR tools set up within <strong>10 minutes, for free</strong>
+                  </div>
+                </div>
+                
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f864866444d8a27519d48a_Template.svg" />
+                  <div class="icon-text">
+                    A free <strong>applicant tracking system</strong>, or free integration with any ATS you may already use
+                  </div>
+                </div>
+
+              </div>  
+              <p class="mb-32">Plus, we can do the vetting for you! With <a href="https://angel.co/recruit/products/curated" class="card-link">Curated</a>, we review the world's top tech talent and highlight candidates directly to you 2x a week.</p>
+            </div>
+            
+            <div class="button-flex">
+              <div class="card-button">
+                <button class="btn btn-outline-dark" onclick="location.href='https://angel.co/recruit/overview'">Learn more</button>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-dark" onclick="location.href='https://angel.co/join?after_sign_in=%2Fonboarding%2Frecruit&source=recruiter_onboarding&source_content=require_login'">Sign up now</button>
+              </div>
+            </div>
+          </div>
+          <div  class="card-flex-img">
+            <img src="https://assets.website-files.com/61f063412698c3c0331848b0/61f995e914cc4b46df4e1ef6_Frame%20284-min-p-800.png" class="card-img"  />
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <!-- Introducing -->
+      <section>
+        <div class="card-flex container-class youtube-play-section">
+          <div  class="card-flex-play">
+            <div class="youtube-section">
+              <iframe src="https://www.youtube.com/embed/_7baCoOPafM" title="REMOTE by AngelList Talent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-play"></iframe>
+            </div>
+            </div>
+          <div class="card-flex-text">
+            <div class="mw-450">
+              <div class="card-head-section">
+                <div class="heading pre-heading mb-32">INTRODUCING:</div>
+                <h2 class="card-header">REMOTE by AngelList Talent</h2>
+              </div>
+              
+              <div class="icon-list">
+                <div class="icon-list-item icon-diff1">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f864157eb9e9cccdf1e5c9_Toggle.svg" />
+                  <div class="icon-text">
+                    Showcase & search by remote job preferences
+                  </div>
+                </div>
+    
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f863c0acdf5061983ced50_Video%20Profile.svg" />
+                  <div class="icon-text">
+                    Use engineering & video assessments to help showcase or evaluate skills
+                  </div>
+                </div>
+                
+                <div class="icon-list-item">
+                  <img class="card-icon" src="https://assets.website-files.com/61f063412698c3c0331848b0/61f862b568e35132688d6934_Unique%20Candidate.svg" />
+                  <div class="icon-text">
+                    Top remote engineers across the US & outside of the US will be featured directly to companies hiring for their skillset
+                  </div>
+                </div>
+              </div>  
+            </div>
+            
+            <div class="button-flex">
+              <div class="card-button">
+                <button class="btn btn-outline-dark learn-more-btn" onclick="location.href='https://angel.co/candidates/remote'">Learn more-job seekers</button>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-outline-dark learn-more-btn" onclick="location.href='https://angel.co/recruit/products/remote'">Learn more-recruiters</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <!-- From users -->
+      <section>
+        <div class="container-class">
+          <div class="user-section">
+            <div class="heading pre-heading mb-32">FROM OUR USERS</div>
+            <h2>Dreams do come true!</h2>
+          </div>
+          <div class="user-card-flex">
+            <div class="user-card card-1">
+              <img class="mb-16" src="https://assets.website-files.com/61f063412698c3c0331848b0/62a195379a8eed7e1cc9580a_Quotes.svg" />
+              <p>I got my tech job on AngelList Talent 4 years ago and I'm still happy! Pays well, great culture, and unlimited PTO.</p>
+            </div>
+            <div class="user-card card-2">
+              <img class="mb-16" src="https://assets.website-files.com/61f063412698c3c0331848b0/62a195379a8eed7e1cc9580a_Quotes.svg" />
+              <p>I love AngelList Talent. I got my current job at a startup entirely through AngelList in November! It's super easy to use and I love the UI.</p>
+            </div>
+            <div class="user-card card-3">
+              <img class="mb-16" src="https://assets.website-files.com/61f063412698c3c0331848b0/62a195379a8eed7e1cc9580a_Quotes.svg" />
+              <p>I can't imagine my day to day without this platform. Life would be a lot more difficult.</p>
+            </div>
+            <div class="user-card card-4">
+              <img class="mb-16" src="https://assets.website-files.com/61f063412698c3c0331848b0/62a195379a8eed7e1cc9580a_Quotes.svg" />
+              <p>Half of the offers I give are sourced from AngelList Talent. It's the best product for anyone looking for startup talent.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <hr>
+
+      <!-- Features -->
+      <div class="container-class">
+        <div class="section feature-flex">
+          <div class="feature">
+            <div class="feature-img-block">
+              <img class="feature-img" src="https://assets.website-files.com/61f063412698c3c0331848b0/61fca567326e3e01ec4dd70b_AGT%20-%20Featured-p-500.png" />
+            </div>
+            <div class="feature-text">
+              <div class="heading pre-heading mb-24">GET FEATURED</div>
+              <h3 class="mb-24">Let us show you off</h3>
+              <p class="mb-24">Apply to be featured and we'll highlight your profile to top recruiters and companies searching for your specific skills.<br><br>Oh, it's also 100% free.</p>
+              <button class="btn btn-outline-dark learn-more-btn" onclick="location.href='https://angel.co/candidates/featured'">Learn more</button>
+            </div>
+          </div>
+  
+          <div class="feature">
+            <div class="feature-img-block" style="background-color: #eaebff;">
+              <img class="feature-img" src="https://assets.website-files.com/61f063412698c3c0331848b0/61fca56692b74d7bc3f0694b_AGT%20-%20Calculator%201-p-500.png" /> 
+            </div>
+            <div class="feature-text">
+              <div>
+                <div class="heading pre-heading mb-24">SALARY CALCULATOR</div>
+                <h3 class="mb-24">Know your worth</h3>
+                <p class="mb-24">We have the data. Research by job title, industry, and company size to find your salary range and be prepared to nail your negotiations..</p>
+                <button class="btn btn-outline-dark" onclick="location.href='https://angel.co/salaries'">Calculate your salary</button>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      
+      <hr>
+
+      <!-- Blog section -->
+      <div class="section">
+        <div class="container-class">
+          <div class="blog-header">
+            <div>
+              <h3 style="margin-bottom: 0px;">From the blog</h3>
+            </div>
+            <div>
+              <button class="btn btn-outline-dark" onclick="location.href='https://angel.co/blog'">More posts</button>
+            </div>
+          </div>
+  
+          <div class="blog-flex">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img class="blog-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/6201f7b98c3af4bc24d5c963_Frame%20293-min-p-800.jpeg" />
+              </div>
+              <div class="blog-text">
+                <div class="heading pre-heading">BLOG POST</div>
+                <h4>Why Naval Ravikant Thinks Remote Work Is The Future</h4>
+                <p class="mb-24">It feels like the rise of remote works has been a top conversation in tech for years, but despite the enthusiasm and attention...  </p>
+                <button class="btn btn-outline-dark">Read more</button>
+              </div>
+            </div>
+  
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img class="blog-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/620190e9752431fe6e3853ad_Frame%20292-min-p-800.jpeg" />
+              </div>
+              <div class="blog-text">
+                <div class="heading pre-heading">BLOG POST</div>
+                <h4>The Truth About Finding Your First Engineering Job</h4>
+                <p class="mb-24">Even for senior engineers, job searches can be confusing, frustrating affairs. When you're a junior engineer looking for your first job...</p>
+                <button class="btn btn-outline-dark">Read more</button>
+              </div>
+            </div>
+  
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img class="blog-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/6201fce3e9c3ecf2109e9009_Frame%20294-min-p-800.jpeg" />
+              </div>
+              <div class="blog-text">
+                <div class="heading pre-heading">JOB COLLECTION</div>
+                <h4>18 Innovative Space Startups Hiring Now</h4>
+                <p class="mb-24">Few tech sectors are capturing the public’s collective imagination as much as space. Privatized spaceflight, or “NewSpace,” is attracting...</p>
+                <button class="btn btn-outline-dark">Read more</button>
+              </div>
+            </div>
+  
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img class="blog-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/620202e3f2df9091f464d354_Frame%20295-min-p-800.jpeg" />
+              </div>
+              <div class="blog-text">
+                <div class="heading pre-heading">JOB COLLECTION</div>
+                <h4>19 Hot Crypto Startups Hiring Remotely in 2022</h4>
+                <p class="mb-24">Either Crypto has a great PR team, or the internet-based medium of exchange is truly taking the world by storm...</p>
+                <button class="btn btn-outline-dark">Read more</button>
+              </div>
+            </div>
+  
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img class="blog-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/62020c3c3f0227e967cae6f5_Frame%20297-min-p-800.jpeg" />
+              </div>
+              <div class="blog-text">
+                <div class="heading pre-heading">JOB COLLECTION</div>
+                <h4>20 Women-Led Startups Expanding Their Remote Teams in 2022</h4>
+                <p class="mb-24">It is no surprise by now that women make great leaders. In the US alone, women-led businesses generated more than 1.8 trillion dollars...</p>
+                <button class="btn btn-outline-dark">Read more</button>
+              </div>
+            </div>
+  
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img class="blog-img" src="https://assets.website-files.com/61f0a5f38caa5c524914a1df/62020b6dc41d9676b8bb7b29_Frame%20296-min-p-800.jpeg" />
+              </div>
+              <div class="blog-text">
+                <div class="heading pre-heading">BLOG POST</div>
+                <h4>30 Questions to Ask Before Joining a Startup</h4>
+                <p class="mb-24">You're trying to evaluate the company while still impressing your interviewers, and that balance can be tricky...</p>
+                <button class="btn btn-outline-dark">Read more</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      <hr>
+      
+      <!-- Dropdown menu -->
+      <div class="section dropdown-section">
+        <div class="dropdown-flex container-class">
+          <div class="dropdown-button">
+            <button class="btn btn-outline-dark">Job Collections<i class="fa-solid fa-angle-down drop-icon"></i></button>
+  
+            <div class="dropdown-content">
+              <a href="#" class="block-link">Remote FirstFuture Job</a>
+              <a href="#" class="block-link">Jobs for Bootcamp Grades</a>
+              <a href="#" class="block-link">Junior Software Engineer Jobs</a>
+              <a href="#" class="block-link">Startups in Bay Area</a>
+              <a href="#" class="block-link">More Jobs</a>
+            </div>
+            
+          </div>
+          <div class="dropdown-button">
+            <button class="btn btn-outline-dark">Remote Jobs<i class="fa-solid fa-angle-down drop-icon"></i></button>
+  
+            <div class="dropdown-content">
+              <a href="#" class="block-link">Remote Software Engineer Jobs</a>
+              <a href="#" class="block-link">Remote Product Manager Jobs</a>
+              <a href="#" class="block-link">Remote HR Jobs</a>
+              <a href="#" class="block-link">Remote Graphic Designer Jobs</a>
+              <a href="#" class="block-link">Remote UI/UX Designer Jobs</a>
+              <a href="#" class="block-link">Remote Sales Marketing Jobs</a>
+              <a href="#" class="block-link">Remote Operation Manager Jobs</a>
+              <a href="#" class="block-link">Remote Account Manager Jobs</a>
+              <a href="#" class="block-link">Remote Growth  Marketer Jobs</a> 
+              <a href="#" class="block-link">More Jobs</a>
+            </div>
+            <!-- <img src="/images/dropdown_menu.png" class="dropdown-logo"> -->
+          </div>
+          <div class="dropdown-button">
+            <button class="btn btn-outline-dark">Jobs by Location<i class="fa-solid fa-angle-down drop-icon"></i></button>
+  
+            <div class="dropdown-content">
+              <a href="#" class="block-link">Jobs in New York</a>
+              <a href="#" class="block-link">Jobs in Canada</a>
+              <a href="#" class="block-link">Jobs in San Fransisco</a>
+              <a href="#" class="block-link">Jobs in India</a>
+              <a href="#" class="block-link">Jobs in Chicago</a>
+              <a href="#" class="block-link">More Jobs by Location</a>
+            </div>
+          </div>
+          <div class="dropdown-button">
+            <button class="btn btn-outline-dark">Jobs by Role<i class="fa-solid fa-angle-down drop-icon"></i></button>
+  
+            <div class="dropdown-content">
+              <a href="#" class="block-link">Software Engineer Jobs</a>
+              <a href="#" class="block-link">Product Manager Jobs</a>
+              <a href="#" class="block-link">Data Analyst Jobs</a>
+              <a href="#" class="block-link">Product Designer Jobs</a>
+              <a href="#" class="block-link">Graphic Designer Jobs</a>
+              <a href="#" class="block-link">UI/UX Designer Jobs</a>
+              <a href="#" class="block-link">Opereation Manager Jobs</a>
+              <a href="#" class="block-link">Account Manager Jobs</a>
+              <a href="#" class="block-link">Growth Manager Jobs</a>
+              <a href="#" class="block-link">Sales Manager Jobs</a>
+              <a href="#" class="block-link">HR Manager Jobs</a>
+            </div>
+          </div>
+          <div class="dropdown-button">
+            <button class="btn btn-outline-dark">Jobs by Role & Location<i class="fa-solid fa-angle-down drop-icon"></i></button>
+  
+            <div class="dropdown-content">
+              <a href="#" class="block-link">Software Engineer Jobs in San Fransisco</a>
+              <a href="#" class="block-link">Software Engineer Jobs in Los Angeles</a>
+              <a href="#" class="block-link">Software Engineer Jobs in New York</a>
+              <a href="#" class="block-link">Product Manager Jobs in San Fransisco</a>
+              <a href="#" class="block-link">Product Manager Jobs in Los Angeles</a>
+              <a href="#" class="block-link">Product Manager Jobs in New York</a>
+              <a href="#" class="block-link">Frontend Developer Jobs in San Fransisco</a>
+              <a href="#" class="block-link">Frontend Developer Jobs in Los Angeles</a>
+              <a href="#" class="block-link">Frontend Developer Jobs in New York</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- About & Options -->
+      <div class="section footer-section">
+        <div class="container-class">
+          <div class="about-flex">
+            <div class="handle-logos">
+              <div class="Angel-logo"><a href="https://angel.co/"><img src="https://assets.website-files.com/61f063412698c3c0331848b0/6225831abd957d511480da22_Logo.svg" /></a></div>
+              <div class="link-logos">
+                <div class="twitter"><a href="https://twitter.com/angellisttalent"><img src="/images/twitter.png" class="logos"></a></div>
+                <div class="insta"><a href="#"><img src="/images/instagram.png" class="logos"></a></div>
+              </div>
+            </div>
+            <div class="options">
+              <div class="options-list">
+                <ul>
+                  <li class="footer-li">
+                    <div class="bold">For Candidates</div>
+                  </li>
+                  <li class="footer-li"><a href="#">Overview</a></li>
+                  <li class="footer-li"><a href="#">Startup Jobs</a></li>
+                  <li class="footer-li"><a href="#">Web3 Jobs</a></li>
+                  <li class="footer-li"><a href="#">Featured</a></li>
+                  <li class="footer-li"><a href="#">Remote</a></li>
+                  <li class="footer-li"><a href="#">Salary Calculator</a></li>
+                </ul>            
+              </div>
+  
+              <div class="options-list">
+                <ul>
+                  <li class="footer-li">
+                    <div class="bold">For Recruiters</div>
+                  </li>
+                  <li class="footer-li"><a href="#">Overview</a></li>
+                  <li class="footer-li"><a href="#">Recruit Pro</a></li>
+                  <li class="footer-li"><a href="#">Curated</a></li>
+                  <li class="footer-li"><a href="#">Remote</a></li>
+                  <li class="footer-li"><a href="#">Hire Developers</a></li>
+                  <li class="footer-li"><a href="#">Pricing</a></li>
+                </ul>            
+              </div>
+  
+              <div class="options-list">
+                <ul>
+                  <li class="footer-li">
+                    <div class="bold">Company</div>
+                  </li>
+                  <li class="footer-li"><a href="#">About</a></li>
+                  <li class="footer-li"><a href="#">AngelList Venture</a></li>
+                  <li class="footer-li"><a href="#">We're Hiring</a></li>
+                  <li class="footer-li"><a href="#">Help</a></li>
+                  <li class="footer-li"><a href="#">Blog</a></li>
+                  <li class="footer-li"><a href="#">Terms & Risks</a></li>
+                  <li class="footer-li"><a href="#">Privacy & Cookies</a></li>
+                </ul>            
+              </div>
+      
+            </div>
+          </div>
+
+          <footer>
+            <div class="footer color-grey">
+              <div>
+                Copyright © 2022 AngelList Talent. All rights reserved.
+              </div>
+              <div>
+                Browse by: <a href="#" class="footer-link color-grey">Jobs</a>, <a href="" class="footer-link color-grey">Remote Jobs</a>
+              </div>
+            </div>
+          </footer>
+
+          <!-- Footer -->
+        </div>
+      </div>
+      
+      <!-- Bootstraap script for nav button animation -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+      <!-- Our javascript code -->
+      <script>
+        
+        // Counter
+
+        // let num = 300000;
+        //     let target_arr = document.getElementsByClassName('counter');
+        //     let target_pos = target_arr[0];
+        //     console.log(target_pos);
+        //     target_pos.innerHTML = num;
+        //     let i=0;
+        //     var myinterval = setInterval(function(){
+        //       num+=300000;
+        //       if(num<6000000) {target_pos.innerHTML = num;}
+        //       if(num>6000000) {clearInterval(myinterval); i=1;} 
+        //       if(i==1){
+        //         target_pos.innerHTML = 6000000;
+        //       }
+        //     },170);
+
+
+        const vis = document.querySelector ('#counter');
+        const observer = new IntersectionObserver(entries => {
+          // console.log(entries);
+          entries.forEach(entry => {
+            // console.log(entry);
+            if(entry.isIntersecting){
+              let num = 300000;
+              let target_arr = document.getElementsByClassName('counter');
+              let target_pos = target_arr[0];
+              // console.log(target_pos);
+              target_pos.innerHTML = num;
+              let i=0;
+              var myinterval = setInterval(function(){
+                num+=300000;
+                if(num<6000000) {target_pos.innerHTML = num;}
+                if(num>6000000) {
+                  clearInterval(myinterval); 
+                  target_pos.innerHTML = 6000000;
+                  observer.unobserve(vis);
+                } 
+              },170);
+            }
+          });
+        });
+        
+        observer.observe(vis);
+        // console.log(vis);
+
+        // Nav bar
+        // if(document.getElementById("checkbox").checked){
+
+        // }
+      </script>
+    </body>
+</html>
